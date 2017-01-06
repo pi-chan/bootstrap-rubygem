@@ -184,7 +184,7 @@ var ScrollSpy = (function ($) {
     }, {
       key: '_getScrollTop',
       value: function _getScrollTop() {
-        return this._scrollElement === window ? this._scrollElement.scrollY : this._scrollElement.scrollTop;
+        return this._scrollElement === window ? this._scrollElement.pageYOffset : this._scrollElement.scrollTop;
       }
     }, {
       key: '_getScrollHeight',
